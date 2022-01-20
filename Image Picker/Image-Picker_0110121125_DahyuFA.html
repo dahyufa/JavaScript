@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image Picker</title>	
+<style>
+	body{
+		background: linear-gradient(#e3ff73, #e27c39);
+		background-repeat: no-repeat;
+	}	
+</style>
+	
+<script>
+	function pilih()
+	{
+ 	var pil=document.getElementById("form1").pic.value;
+    if (pil=="1")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/HarryPotter.PNG'>";
+		window.alert("Ini Adalah Gambar HARRY-POTTER.PNG");
+    }
+	else if (pil=="2")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/RonWeasley.PNG'>";
+		window.alert("Ini Adalah Gambar RON-WEASLEY.PNG");
+    }
+	else if (pil=="3")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/HarmioneGrangger.PNG'>";
+		window.alert("Ini Adalah Gambar HARMIONE-GRANGGER.PNG");
+    }
+	else if (pil=="4")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/GinnyWeasley.PNG'>";
+		window.alert("Ini Adalah Gambar GINNY-WEASLEY.PNG");
+    }
+	else if (pil=="5")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/DracoMalfoy.PNG'>";
+		window.alert("Ini Adalah Gambar DRACO-MALFOY.PNG");
+    }
+	else if (pil=="6")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/LunaLovegood.PNG'>";
+		window.alert("Ini Adalah Gambar LUNA-LOVEGOOD.PNG");
+    }
+	else if (pil=="7")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/CedricDiggory.PNG'>";
+		window.alert("Ini Adalah Gambar CEDRIC-DIGGORY.PNG");
+    }
+	else if (pil=="8")
+    {
+        document.getElementById("img").innerHTML="<img src='IMG/DeanThomas.PNG'>";
+		window.alert("Ini Adalah Gambar DEAN-THOMAS.PNG");
+    }else{
+		document.getElementById("img").innerHTML="<img src='IMG/Hogwarts.PNG'>";
+	}
+	}
+</script>
+</head>
+
+<body>
+<div>
+	<div>
+  		<div>
+    	<h2 align="center">Hogwarts School of Witchcraft and Wizardry</h2>
+    	<div></div>
+  		</div>
+	</div>
+	<br>
+	<br>
+	
+	<center>
+		<form id="form1">
+			<select onChange="return pilih()" name="pic" id="pic" >
+				<option value="0">PILIH GAMBAR</option>
+				<option value="1"> HARRY POTTER </option>
+				<option value="2"> RON WEASLEY </option>
+				<option value="3"> HARMIONE GRANGGER </option>
+				<option value="4"> GINNY WEASLEY </option>
+				<option value="5"> DRACO MALFOY </option>
+				<option value="6"> LUNA LOVEGOOD </option>
+				<option value="7"> CEDRIC DIGGORI </option>
+				<option value="8"> DEAN THOMAS </option>
+			</select>
+		</form>
+	</center>
+	<br>
+	
+	<center>
+		<div id="img"><img src="IMG/Hogwarts.png" alt="hogwarts"></div>
+	</center>
+</div>
+</body>
+</html>
